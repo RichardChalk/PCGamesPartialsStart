@@ -1,0 +1,20 @@
+﻿@model PCGamesPartials.Models.PCGame
+
+<div class="card h-100 border-0 rounded-4 overflow-hidden">
+    <img src="@Model.ImageUrl" class="card-img-top object-fit-cover" style="height: 440px;" alt="@Model.Title">
+    <div class="card-body">
+        <h2 class="card-title text-center text-capitalize">@Model.Title</h2>
+        <p class="mb-1 text-bg-success text-center">@Model.Genre</p>
+        <p class="card-text text-truncate">@Model.Description</p>
+        <div class="fw-bold">
+            @if (Model.Price == 0)
+            {
+                <span>@Model.Price.ToString("0 kr") (Gratis att spela)</span>
+            }
+            else
+            {
+                <span>@Model.Price.ToString("0 kr")</span>
+            }
+        </div>
+    </div>
+</div>
