@@ -32,17 +32,3 @@ body {
 }
 
 
-/*Extra*/
-body {
-    background-color: #1a1a1a;
-    color: white;
-}
-
-.card {
-    background-color: #1e1e1e;
-    color: #fff;
-}
-
-.card img {
-    object-fit: cover;
-}
